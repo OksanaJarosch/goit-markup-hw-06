@@ -695,7 +695,6 @@ Section Team*/
 }
 
 .input-field {
-  margin-bottom: 8px;
   width: 360px;
   height: 40px;
   padding: 8px 16px;
@@ -742,4 +741,19 @@ Section Team*/
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+}
+
+.form-input {
+  position: relative;
+}
+
+.user-info-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+
+.form-field {
+  margin-bottom: 8px;
 }

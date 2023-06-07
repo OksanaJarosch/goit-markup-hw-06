@@ -421,6 +421,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -428,6 +429,35 @@
             <use href="./images/icons.svg#close-black-18dp-2-1"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="contact-form">
+          <label class="user-info-label" for="name">Name</label>
+          <input class="input-field" type="text" name="user-name" id="name" />
+          <label class="user-info-label" for="phone">Phone</label>
+          <input class="input-field" type="tel" name="user-number" id="phone" />
+          <label class="user-info-label" for="email">Email</label>
+          <input class="input-field" type="email" name="user-mail" id="email" />
+
+          <label class="user-info-label" for="comment">Comment</label>
+          <textarea
+            class="input-field comment-field"
+            name="comment"
+            id="comment"
+            placeholder="Text input"
+          ></textarea>
+
+          <div class="privacy-policy">
+            <input type="checkbox" name="privacy-policy" />
+            <label class="check-label" for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-submit-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

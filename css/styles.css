@@ -783,21 +783,18 @@ Section Team*/
   padding-left: 16px;
   height: 120px;
   resize: none;
-}
 
-.comment-field::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
 }
 
 .check-label {
   display: flex;
   align-items: center;
-}
 
-.check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -815,13 +812,18 @@ Section Team*/
 
 .modal-submit-btn {
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 
   transition: background-color var(--transition);
 }
@@ -850,7 +852,6 @@ Section Team*/
 
 .input-field:focus {
   border-color: var(--accent-color);
-  /* outline: none; */
 }
 
 .input-field:focus + .user-info-icon {
@@ -859,6 +860,10 @@ Section Team*/
 
 .new-checkbox {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   box-sizing: border-box;
   margin-right: 8px;
 
@@ -867,8 +872,10 @@ Section Team*/
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
 
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
 
 .check-icon {
@@ -877,15 +884,14 @@ Section Team*/
   left: 50%;
 
   transform: translate(-50%, -50%);
-  fill: transparent;
-
-  transition: fill var(--transition);
 }
 
 .check-input:checked + .check-label .new-checkbox {
   background-color: var(--button-hover);
+  border: none;
+  fill: var(--white-color);
 }
 
-.check-input:checked + .check-label .check-icon {
-  fill: var(--icon-bg);
+.check-link {
+  color: var(--accent-color);
 }

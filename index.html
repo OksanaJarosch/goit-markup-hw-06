@@ -426,7 +426,7 @@
 
         <div class="subscribe-container">
           <p class="sm-text">Subscribe</p>
-          <div class="subscribe-form">
+          <form class="subscribe-form">
             <label>
               <input
                 class="subscribe-input"
@@ -440,7 +440,7 @@
                 <use href="./images/icons.svg#subscribe"></use>
               </svg>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -504,11 +504,11 @@
           </div>
 
           <div class="comment-container">
-            <label class="user-info-label" for="comment">Comment</label>
+            <label class="user-info-label" for="user-comment">Comment</label>
             <textarea
               class="input-field comment-field"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -516,22 +516,21 @@
           <div class="privacy-policy">
             <input
               class="check-input visually-hidden"
-              id="privacy-policy"
+              id="user-privacy"
               type="checkbox"
-              name="privacy-policy"
-              value="checked"
+              name="user-privacy"
+              value="true"
               required
             />
-            <label class="check-label" for="privacy-policy">
+            <label class="check-label" for="user-privacy">
               <span class="new-checkbox">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              <span class="check-text"
-                >I accept the terms and conditions of the
-                <a href="#">Privacy Policy</a></span
-              >
+
+              I accept the terms and conditions of the
+              <a class="check-link" href="#">Privacy Policy</a>
             </label>
           </div>
 

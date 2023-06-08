@@ -744,6 +744,7 @@ Section Team*/
   font-weight: 500;
   margin-bottom: 16px;
   text-align: center;
+  color: var(--title-color);
 }
 
 .contact-form {
@@ -751,7 +752,13 @@ Section Team*/
   flex-direction: column;
 }
 
+.comment-container {
+  margin-bottom: 16px;
+}
+
 .user-info-label {
+  display: block;
+
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -766,12 +773,13 @@ Section Team*/
   padding: 8px 16px 8px 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
 
-  transition: border var(--transition);
+  transition: border-color var(--transition);
 }
 
 .input-field.comment-field {
-  margin-bottom: 16px;
   padding-left: 16px;
   height: 120px;
   resize: none;
@@ -841,8 +849,8 @@ Section Team*/
 }
 
 .input-field:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
+  border-color: var(--accent-color);
+  /* outline: none; */
 }
 
 .input-field:focus + .user-info-icon {

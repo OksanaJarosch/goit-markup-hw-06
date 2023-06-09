@@ -486,6 +486,10 @@ Section Team*/
 
 /* Futter FORM */
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-input {
   padding: 8px 16px;
   margin-right: 24px;

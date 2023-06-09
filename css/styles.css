@@ -484,17 +484,23 @@ Section Team*/
 
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-input {
   padding: 8px 16px;
-  margin-right: 24px;
+
   width: 264px;
   height: 40px;
   background-color: transparent;
   border: 1px solid var(--white-color);
   border-radius: 4px;
   color: var(--white-color);
+
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   transition: border var(--transition);
 }
@@ -512,11 +518,16 @@ Section Team*/
 }
 
 .subscribe-btn {
-  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   background-color: var(--accent-color);
   color: var(--white-color);
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -524,6 +535,7 @@ Section Team*/
   border-radius: 4px;
   border: none;
   text-align: left;
+  cursor: pointer;
 
   transition: background-color var(--transition);
 }
@@ -532,16 +544,8 @@ Section Team*/
   background-color: var(--button-hover);
 }
 
-.subscribe-btn-container {
-  position: relative;
-  display: inline-block;
-}
-
 .subscribe-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 24px;
+  margin-left: 16px;
 }
 
 /*! Portfolio page */
@@ -788,7 +792,7 @@ Section Team*/
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .check-label {
@@ -876,18 +880,10 @@ Section Team*/
     fill var(--transition);
 }
 
-.check-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-}
-
 .check-input:checked + .check-label .new-checkbox {
   background-color: var(--button-hover);
   border: none;
-  fill: var(--white-color);
+  fill: var(--middle-background);
 }
 
 .check-link {

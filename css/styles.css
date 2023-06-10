@@ -795,6 +795,10 @@ Section Team*/
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
+.input-field.comment-field::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
 .check-label {
   font-size: 12px;
   line-height: 1.17;
